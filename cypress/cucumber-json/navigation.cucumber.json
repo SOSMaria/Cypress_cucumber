@@ -1,0 +1,121 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Open links",
+    "line": 1,
+    "id": "open-links",
+    "tags": [],
+    "uri": "navigation.feature",
+    "elements": [
+      {
+        "id": "open-links;verify-link-of-standarts-web-of-devices",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Verify link of standarts web of devices",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to standards/webofdevices/multimodal",
+            "result": {
+              "status": "passed",
+              "duration": 5147000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I verify webofdevices/multimodal and .title load",
+            "result": {
+              "status": "passed",
+              "duration": 876000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I verify console errors do not appear",
+            "result": {
+              "status": "passed",
+              "duration": 85000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "open-links;verify-link-of-standarts-web-design",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Verify link of standarts web design",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I navigate to standards/webdesign/htmlcss",
+            "result": {
+              "status": "passed",
+              "duration": 1336000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I verify webdesign/htmlcss and .title load",
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I verify console errors do not appear",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "open-links;verify-error-link",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Verify error link",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I navigate to standards/badpage",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://www.w3.org/standards/badpage\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at http://www.w3.org/__cypress/runner/cypress_runner.js:163581:84\n    at visitFailedByErr (http://www.w3.org/__cypress/runner/cypress_runner.js:162902:12)\n    at http://www.w3.org/__cypress/runner/cypress_runner.js:163561:13\n    at tryCatcher (http://www.w3.org/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://www.w3.org/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://www.w3.org/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://www.w3.org/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://www.w3.org/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://www.w3.org/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://www.w3.org/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://www.w3.org/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://www.w3.org/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://www.w3.org/__cypress/tests?p=cypress/integration/navigation.feature:56:6)\n    at Context.resolveAndRunStepDefinition (http://www.w3.org/__cypress/tests?p=cypress/integration/navigation.feature:10477:29)\n    at Context.eval (http://www.w3.org/__cypress/tests?p=cypress/integration/navigation.feature:9798:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I verify error page",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
